@@ -1,6 +1,22 @@
-# Jekyll config for GitHub Pages (see https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll)
+# Jekyll + GitHub Pages — Minimal theme
+# Theme: https://github.com/pages-themes/minimal
+# GitHub Pages overview: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+
 title: BMI Calculator
-description: Docs and privacy
-theme: jekyll-theme-minimal
-# Project site URL — must match your repository name (change if you rename the repo)
+description: Privacy policy and documentation for the BMI Calculator app.
+
+# Pin the theme to a release (see Minimal releases)
+remote_theme: pages-themes/minimal@v0.2.0
+
+plugins:
+  - jekyll-remote-theme
+
+# Project Pages site — path must match the repository name
 baseurl: "/bmi-calculator"
+url: "https://nguyencongcuong.github.io"
+
+# Optional Minimal theme settings (https://github.com/pages-themes/minimal#configuration-variables)
+show_downloads: false
+
+# Helps GitHub metadata and theme links (owner/repo — edit if you fork or rename)
+repository: nguyencongcuong/bmi-calculator
